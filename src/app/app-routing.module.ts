@@ -7,6 +7,7 @@ const routes: Routes = [
   {path: 'cliente', loadChildren: './cliente/cliente.module#ClienteModule'},
   {path: 'conta', loadChildren: './conta/conta.module#ContaModule'},
   {path: 'transacoes', loadChildren: './transacoes/transacoes.module#TransacoesModule'},
+  {path: 'barbearia', loadChildren: './barbearia/barbearia.module#BarbeariaModule'},
   {path: '', loadChildren: './core/core.module#CoreModule'}
 ];
 

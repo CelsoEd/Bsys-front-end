@@ -5,6 +5,9 @@ import {MenuLateralComponent} from './menu-lateral/menu-lateral.component';
 import {CoreRoutingModule} from './core-routing.module';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
+import {ReactiveFormsModule} from '@angular/forms';
+import {HttpClientModule} from '@angular/common/http';
+import {LoginComponent} from './autentificacao/login/login.component';
 
 
 @NgModule({
@@ -12,11 +15,14 @@ import { FooterComponent } from './footer/footer.component';
     HomeComponent,
     MenuLateralComponent,
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    LoginComponent
   ],
   imports: [
     CommonModule,
-    CoreRoutingModule
+    CoreRoutingModule,
+    ReactiveFormsModule,
+    HttpClientModule
   ],
   exports: [
     MenuLateralComponent,

@@ -1,7 +1,32 @@
-<nav class="navbar-expand-lg navbar navbar-dark" id="grad">
-  <a class="navbar-brand" [routerLink]="['home']"><h1>Banco</h1></a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-</nav>
+<section class="navigation">
+
+  <div class="nav-container">
+    <div class="brand">
+      <a href="#!">Logo</a>
+    </div>
+    <nav>
+      <div class="nav-mobile"><a id="nav-toggle" href="#!"><span></span></a></div>
+      <ul class="nav-list">
+        <li>
+          <a href="#!" [routerLink]="['login']">Login</a>
+        </li>
+        <li>
+          <a href="#!" [routerLink]="['barbearia','lista']">Barbearias</a>
+        </li>
+        <li>
+          <a href="#!" [routerLink]="['home']">Freenlacers</a>
+        </li>
+        <li>
+          <a href="#!" [routerLink]="['home']">Promoções</a>
+        </li>
+        <li>
+          <a href="#!" [routerLink]="['home']">Perfil</a>
+        </li>
+        <li>
+          <a>{{usuario?.nome}}</a>
+        </li>
+
+      </ul>
+    </nav>
+  </div>
+</section>
